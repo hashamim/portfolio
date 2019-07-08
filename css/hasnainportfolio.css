@@ -44,3 +44,7 @@ video {
 .skills-icons > * {
     text-align: center;
 }
+
+.footer {
+    background-color: #1a252f;
+}
