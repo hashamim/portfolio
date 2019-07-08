@@ -1,0 +1,38 @@
+.img-container {
+    z-index: -1;
+    width: 100%;
+    padding-top: 75%;
+    position: relative;
+    background-color: black;
+}
+
+.img-container.newtflix {
+    background-color: #221F1F;
+}
+
+.img-container.just-roll {
+    background-color: #00faff;
+}
+
+.img-container * {
+    position: absolute;
+    left: 0;
+    top: 30%;
+}
+.just-roll-header {
+    color: #ff6ec7;
+    font-family: 'Teko', sans-serif;
+    font-weight: 700;
+    font-size: 10vw;
+    font-style: italic;
+}
+
+.masthead-link {
+    color: white;
+    font-size: 2.5rem;
+    margin: 0 10px 0;
+}
+
+video {
+    width: 100%;
+}
