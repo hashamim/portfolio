@@ -11,6 +11,6 @@ function copyFunc(e) {
     document.execCommand("copy");
     body.removeChild(copyText)
     var mailI = document.getElementById("copy-link");
-    mailI.setAttribute("aria-label","copied");
-    setTimeout(()=>mailI.setAttribute("aria-label","click to copy email"), 1000)
+    mailI.setAttribute("aria-label","copied!");
+    setTimeout(()=>mailI.setAttribute("aria-label","click to copy email"), 2500)
 }

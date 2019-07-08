@@ -36,3 +36,11 @@
 video {
     width: 100%;
 }
+
+.skills-icons {
+    font-size: 4rem;
+}
+
+.skills-icons > * {
+    text-align: center;
+}
