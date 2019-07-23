@@ -18,6 +18,11 @@ function copyFunc(e) {
 function resumeModal(e) {
     e.preventDefault();
     const container = document.getElementById("resume-container");
+    container.classList.remove("resume-container");
+    if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) < 768) {
+        container.classList.add("resume-container");
+        return;
+    }
     const height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - container.offsetTop;
     document.getElementById("resume").style.height=`${height}px`;
     debugger
