@@ -19,7 +19,7 @@ function resumeModal(e) {
     e.preventDefault();
     const container = document.getElementById("resume-container");
     if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) < 768) {
-         window.open("img/Hasnain_Shamim_resume.pdf", "_blank");
+         window.open("https://drive.google.com/file/d/18jGKn-AvkjBzMgXrDTSRaS6mVDobHQ9L/view?usp=sharing", "_blank");
         return;
     }
     const height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - container.offsetTop;
