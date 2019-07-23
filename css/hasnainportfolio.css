@@ -1,3 +1,23 @@
+.resume-outer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1051;
+}
+.resume-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 137.5%;
+}
+.resume-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 .masthead-avatar {
     border-radius: 50%;
 }
