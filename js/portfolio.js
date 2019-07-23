@@ -18,8 +18,9 @@ function copyFunc(e) {
 function resumeModal(e) {
     e.preventDefault();
     const container = document.getElementById("resume-container");
+    container.classList.remove("resume-container");
     if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) < 768) {
-         window.open("https://drive.google.com/file/d/18jGKn-AvkjBzMgXrDTSRaS6mVDobHQ9L/view?usp=sharing", "_blank");
+         container.classList.add("resume-container");
         return;
     }
     const height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - container.offsetTop;
