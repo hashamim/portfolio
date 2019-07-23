@@ -19,11 +19,16 @@ function resumeModal(e) {
     e.preventDefault();
     const container = document.getElementById("resume-container");
     container.classList.remove("resume-container");
+    if(container.dataset.ran > 0){
+        return;
+    }
     if (Math.max(document.documentElement.clientWidth, window.innerWidth || 0) < 768) {
          container.classList.add("resume-container");
+         container.dataset.ran = 1;
         return;
     }
     const height = Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - container.offsetTop;
     document.getElementById("resume").style.height=`${height}px`;
+    container.dataset.ran = 1;
     debugger
 }
